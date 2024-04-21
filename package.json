@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "tsc -w",
-    "server": "nodemon ./build/index.js"
+    "server": "nodemon ./build/index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

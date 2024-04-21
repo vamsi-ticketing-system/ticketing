@@ -24,8 +24,8 @@ import { PaymentConfirmationRouter } from './routes/payment-confirmation/Payment
 import { BookingHistoryRouter } from './routes/booking-history/BookingHistoryRouter';
 import './config/config';
 const PORT = 3002;
-const VERSION = "1.0.0";
-const BASE_URL = "/ticketing"
+const VERSION = "/v1";
+const BASE_URL = "/api"+VERSION+"/ticketing"
 
 const app = expres();
 app.use(cors());

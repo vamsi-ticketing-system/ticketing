@@ -37,8 +37,8 @@ const PaymentConfirmationRouter_1 = require("./routes/payment-confirmation/Payme
 const BookingHistoryRouter_1 = require("./routes/booking-history/BookingHistoryRouter");
 require("./config/config");
 const PORT = 3002;
-const VERSION = "1.0.0";
-const BASE_URL = "/ticketing";
+const VERSION = "/v1";
+const BASE_URL = "/api" + VERSION + "/ticketing";
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(body_parser_1.default.json());
