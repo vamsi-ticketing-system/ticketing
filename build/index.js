@@ -79,7 +79,7 @@ app.use(common_1.errorHandler);
 app.listen(PORT, () => {
     connectToNATSServer();
     connectToMongo();
-    console.log(`Ticketing APIs(${VERSION}) is accessible on ${PORT} `);
+    console.log(`Ticketing APIs(${BASE_URL}) is accessible on ${PORT} `);
 });
 const connectToMongo = () => __awaiter(void 0, void 0, void 0, function* () {
     try {

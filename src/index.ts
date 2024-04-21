@@ -87,7 +87,7 @@ app.use(errorHandler);
 app.listen(PORT,()=>{
     connectToNATSServer();
     connectToMongo();
-    console.log(`Ticketing APIs(${VERSION}) is accessible on ${PORT} `);
+    console.log(`Ticketing APIs(${BASE_URL}) is accessible on ${PORT} `);
 });
 
 
