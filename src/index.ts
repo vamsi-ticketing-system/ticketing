@@ -23,7 +23,7 @@ import { GenresFetchRouter } from './routes/genres/GenresFetchRouter';
 import { PaymentConfirmationRouter } from './routes/payment-confirmation/PaymentConfirmationRouter';
 import { BookingHistoryRouter } from './routes/booking-history/BookingHistoryRouter';
 import './config/config';
-const PORT = 3002;
+const PORT = process.env.PORT || 9002;
 const VERSION = "/v1";
 const BASE_URL = "/api"+VERSION+"/ticketing"
 

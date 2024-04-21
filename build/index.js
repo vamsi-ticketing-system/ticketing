@@ -36,7 +36,7 @@ const GenresFetchRouter_1 = require("./routes/genres/GenresFetchRouter");
 const PaymentConfirmationRouter_1 = require("./routes/payment-confirmation/PaymentConfirmationRouter");
 const BookingHistoryRouter_1 = require("./routes/booking-history/BookingHistoryRouter");
 require("./config/config");
-const PORT = 3002;
+const PORT = process.env.PORT || 9002;
 const VERSION = "/v1";
 const BASE_URL = "/api" + VERSION + "/ticketing";
 const app = (0, express_1.default)();
